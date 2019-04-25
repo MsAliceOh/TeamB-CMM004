@@ -103,7 +103,7 @@ while ($row = $resultTrade->fetch_assoc()) {
             echo  $_SESSION["user"]."<br><br>";
             ?>
 
-                <button onclick="document.getElementById('usernme').style.display='block'" style="width:auto; float: left;">Update Username</button><br><br>
+
         </div>
         <div id = "textbox">
             <h3>Name:</h3>
@@ -154,17 +154,7 @@ while ($row = $resultTrade->fetch_assoc()) {
         <h3>You can update your password Here: </h3>
         <button  onclick="document.getElementById('password').style.display='block'" style="width:auto; float: left">Update Password</button><br><br>
     </div>
-        <!-- update username-->
-        <div id="usernme" class="modal">
-                <form class="modal-content animate" onsubmit="return confirm('this update will log you out,\n\n Are sure you want to CONTINUE.....')" action="updateTradesmanProfile.php" method="post">
-                    <label for="uname"><b>Username</b></label>
-                    <input class="justMo" type="text" placeholder="Enter Username" name="uname">
-                    <button class="button1" type="submit" name="update_username">update</button>
-                    <div >
-                        <button type="button" onclick="document.getElementById('usernme').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
-                </form>
-       </div>
+
         <!-- update user first & last name-->
         <div id="f_l_name" class="modal">
                 <form class="modal-content animate" action="updateTradesmanProfile.php" method="post">

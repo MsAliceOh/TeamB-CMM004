@@ -214,9 +214,9 @@ if ( !isset( $_SESSION['user'])) {
                     <?php
 
                     //  $tradesman= $_POST['accepted'];
-                    $query = " SELECT U.username, U.firstname, U.lastname, U.contact, L.email, E.eventID, E.title, B.eventID, B.callout, B.quote 
+                    $query = " SELECT U.username, U.firstname, U.lastname, U.contact, L.email, E.eventID, E.title, B.username, B.eventID, B.callout, B.quote 
                            FROM login L, user U , event E, bids B
-                           WHERE U.username=L.username AND U.username=E.user AND E.eventID=B.eventID AND B.accepted=1";  // AND bids.username='$tradesman'
+                           WHERE  U.username=L.username AND U.username=E.user AND E.eventID=B.eventID AND B.accepted=1 AND B.username = '$username'";  // AND bids.username='$tradesman'
                     $result = mysqli_query($db, $query);
                     while ($row = mysqli_fetch_array($result)) {
 

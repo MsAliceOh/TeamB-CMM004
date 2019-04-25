@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Tradesman</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../unsemantic-grid-responsive-tablet.css">
+
+</head>
+<body>
+
+<main class = "grid-container">
+    <form method="post" action="/server/loginSystem.php" id = "loginForm">
+        <div class = grid-100>
+                <div class = "header1">
+
+                    <div class = "logo">
+                        <img src = "#">
+                    </div>
+
+                    <div class = "login" >
+                        <table  >
+                            <tr >
+                                <td>Username or Email</td>
+                                <td>Password</td>
+                            </tr>
+                            <tr>
+                                <td><input  class="login-txt" type="email" name="username" placeholder="Email" ></td>
+                                <td><input class="login-txt" type="password" name="password" placeholder="Enter Password"></td>
+                                <td><input type="submit" name="login" value="Login" class="btn"></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp</td>
+                                <td><a href="#">forgotten password!</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </form>
+
+    <div id = "title"><br>
+        <h1>Tradesman Aberdeen </h1>
+        <h2>Connecting  tradesmen to the people who need them.</h2>
+    </div>
+
+    <section class = grid-50>
+        <div id = "userForm">
+            <form method="post" action="../server/userSignUp.php">
+                <h2>Create a User Account</h2>
+                <h3>I need help!</h3>
+                <div class="input">
+                    <label>First Name</label>
+                    <input type="text" name="1name" placeholder="First Name">
+                </div>
+                <div class="input">
+                    <label>Last Name</label>
+                    <input type="text" name="u2name" placeholder="last name">
+                </div>
+                <div class="input">
+                    <label>Address</label>
+                    <input type="text" name="add1" placeholder=""><br>
+                    <input type="text" name="add2" placeholder=""><br>
+                    <input type="text" name="city" placeholder=""><br>
+                    <label>Post Code</label>
+                    <input type="text" name="postcode" placeholder="postcode">
+                </div>
+                <div class="input">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="input">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="email">
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" name="password0" placeholder="password">
+                </div>
+                <div class="input">
+                    <label>Confirm Password</label>
+                    <input type="password" name="password1" placeholder="confirm password">
+                </div>
+                <div class="input">
+                    <button type="submit" name="userRej" class="btn">Register as User</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class = grid-50>
+        <div id = "tradeForm">
+            <form method="post" action="../server/tradeSignUp.php">
+
+
+                <h2>Create a Tradesman Account</h2>
+                <h3>I can help!</h3>
+                <div class="input">
+                    <label>First Name</label>
+                    <input type="text" name="1name_tr" placeholder="First Name">
+                </div>
+                <div class="input">
+                    <label>Last Name</label>
+                    <input type="text" name="u2name_tr" placeholder="last name">
+                </div>
+                <div class="input">
+                    <label>Address</label>
+                    <input type="text" name="add1_tr" placeholder=""><br>
+                    <input type="text" name="add2_tr" placeholder=""><br>
+                    <input type="text" name="city_tr" placeholder=""><br>
+                    <label>Post Code</label>
+                    <input type="text" name="postcode_tr" placeholder="postcode">
+                </div>
+                <div class="input">
+                    <label>Username</label>
+                    <input type="text" name="username_tr" placeholder="Username">
+                </div>
+                <div class="input">
+                    <label>Email</label>
+                    <input type="email" name="email_tr" placeholder="email">
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" name="password_tr" placeholder="password">
+                </div>
+                <div class="input">
+                    <label>Confirm Password</label>
+                    <input type="password" name="password1_tr" placeholder="confirm password">
+                </div>
+                <div class="input" id = "profSelect">
+                    <div class="input">
+                        <label>Profession</label>
+                        <select multiple name = "profession" id = "prof">
+                            <option value = "Builder" selected>Builder</option>
+                            <option value = "Plumber">Plumber</option>
+                            <option value = "Electrician">Electrician</option>
+                            <option value = "Stone Mason">Stone Mason</option>
+                            <option value = "Welder">Welder</option>
+                            <option value = "Carpenter">Carpenter</option>
+                            <option value = "Painter/Decorator">Painter/Decorator</option>
+                            <option value = "Handyman">Handyman</option>
+                        </select>
+                        <p>Press ctrl to select multiple</p>
+                    </div>
+                </div>
+                <div class="input">
+                    <label>About you</label>
+                    <textarea name = "AboutYou" id="aboutYou">
+                    Please enter a brief description of yourself and the work you do.
+                </textarea>
+                </div>
+                <div class="input">
+                    <label>Qualifications</label>
+                    <textarea name="qua" id = "qualification">
+                    Please list any qualifications you have here.
+                </textarea>
+                </div>
+                <div class="input">
+                    <button type="submit" name="tradesRej" class="btn">Register as Tradesman </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+</main>
+
+</body>
+</html>

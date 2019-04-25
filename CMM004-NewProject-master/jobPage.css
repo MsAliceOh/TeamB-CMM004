@@ -1,0 +1,48 @@
+#jobBox {
+    width: 90%;
+    border: 1px solid #cacaca;
+    background: rgba(190, 189, 194, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 3px;
+    margin-top: 180px;
+}
+
+#whitebox {
+    background: rgba(250, 249, 255, 0.86);
+    padding: 2px;
+    margin: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+#jButton1 {
+    float: right;
+    cursor: pointer;
+}
+
+#jButton2 {
+    float: left;
+    cursor: pointer;
+}
+
+#closeJob {
+
+    border-color: #392f38;
+}
+.form1 {
+    background: rgba(125, 0, 255, 0);
+    border: none;
+    width: 40%;
+    margin-top: 110px;
+    color: red;
+
+}
+

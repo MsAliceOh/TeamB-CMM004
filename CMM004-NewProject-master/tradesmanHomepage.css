@@ -1,0 +1,133 @@
+#jobsForm {
+    display: block;
+    text-align: center;
+}
+
+#biddingForm {
+    display: block;
+    text-align: center;
+}
+
+#comments {
+    text-wrap: normal;
+    width: 95%;
+    height: 300px;
+}
+
+#biddingForm>select {
+    height: 60px;
+    width: 95%;
+    font-size: 13px;
+}
+
+#professionSelect {
+    height:40px;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px #717171
+}
+
+#jobList {
+    background: white;
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+/*upload profile image The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f1eff4;
+
+}
+
+
+/*style for the hidden form*/
+
+.mof{
+    width: 90%;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #cacaca;
+    background: rgba(190, 189, 194, 0.75);
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.mof>h2 {
+    text-align: center;
+    color: #443843;
+}
+
+.mof button{
+    height: 100px;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fefefe;
+    -moz-text-size-adjust: 50%;
+}
+.mof button:hover{
+    background-color: turquoise;
+}
